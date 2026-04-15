@@ -6,7 +6,6 @@ Live Demo
 You can view the live version of my portfolio here:
 
 👉
-Bash
 new-portfolio-ten-mauve.vercel.app
 
 Tech Stack
