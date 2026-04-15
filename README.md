@@ -5,7 +5,7 @@ Welcome to my professional portfolio! I am a S.Y. B.Tech student at RIT, special
 Live Demo
 You can view the live version of my portfolio here:
 
-👉 [Insert your Vercel URL here]
+👉 new-portfolio-ten-mauve.vercel.app
 
 Tech Stack
 This portfolio is built with modern web technologies to ensure speed and responsiveness:
@@ -51,7 +51,6 @@ Start the development server:
 Bash
 npm run dev
 Get in Touch
-LinkedIn: 
 
 Email: shreyachavan3470@gmail.com
 
