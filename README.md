@@ -5,7 +5,8 @@ Welcome to my professional portfolio! I am a S.Y. B.Tech student at RIT, special
 Live Demo
 You can view the live version of my portfolio here:
 
-👉 new-portfolio-ten-mauve.vercel.app
+👉 Bash
+new-portfolio-ten-mauve.vercel.app
 
 Tech Stack
 This portfolio is built with modern web technologies to ensure speed and responsiveness:
