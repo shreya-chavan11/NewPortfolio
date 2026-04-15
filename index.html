@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="module" src="/src/main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreya Chavan | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="bg-deep-blue text-text-main font-mulish overflow-x-hidden">
+
+  <nav class="fixed w-full z-50 bg-deep-blue/80 backdrop-blur-md border-b border-border-line">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="hover:text-electric-blue transition">
+        <div class="text-2xl font-black text-electric-blue tracking-tighter">Shreya <span
+            class="text-text-main">.</span>
+        </div>
+      </a>
+      <div class="hidden md:flex space-x-8 text-xs font-bold tracking-widest text-white">
+    <a href="#home" class="hover:text-electric-blue transition">Home</a>
+    <a href="#about" class="hover:text-electric-blue transition">About</a>
+    <a href="#projects" class="hover:text-electric-blue transition">Projects</a>
+    <a href="#skills" class="hover:text-electric-blue transition">Skills</a>
+    <a href="#contact" class="hover:text-electric-blue transition">Contact</a>
+  </div>
+
+  <div id="hamburger-btn" class="md:hidden cursor-pointer z-50">
+    <img src="preferences.png" alt="menu" class="h-8 w-8 object-contain brightness-200">
+  </div>
+
+  <div id="mobile-nav" class="hidden absolute top-full w-[0.01rem] px-20 right-0 mx-4 bg-deep-blue/80 flex flex-row space-y-6 z-40 py-10  text-white font-bold  shadow-xl border-t border-gray-800">
+    <a href="#home" class="hover:text-electric-blue transition">Home</a>
+    <a href="#about" class="hover:text-electric-blue transition">About</a>
+    <a href="#projects" class="hover:text-electric-blue transition">Projects</a>
+    <a href="#skills" class="hover:text-electric-blue transition">Skills</a>
+    <a href="#contact" class="hover:text-electric-blue transition">Contact</a>
+  </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home"
+    class="min-h-screen flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto px-6 pt-20 gap-12">
+    <div class="w-64 h-64 md:w-80 md:h-80 relative flex-shrink-0 animate__animated animate__fadeInLeft">
+      <div class="absolute inset-0 bg-electric-blue rounded-full blur-3xl opacity-20 animate-pulse"></div>
+      <div
+        class="w-full h-full rounded-full border-4 border-border-line overflow-hidden relative z-10 transition-transform hover:scale-105 duration-500">
+        <img src="shreya.jpeg" alt="Shreya Chavan"
+          class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+      </div>
+    </div>
+
+    <div class="text-center md:text-left animate__animated animate__fadeInRight">
+      <h2 class="text-electric-blue font-bold text-sm tracking-[0.1em] text-xl mb-2 ">S.Y B.Tech Student At RIT</h2>
+      <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight">Shreya <br><span class="opacity-30">Chavan</span>
+      </h1>
+      <h3 class="text-light-blue-300 text-3xl pb-4">Frontend Developer & UI/UX Designer</h3>
+      <p class="text-text-muted text-lg max-w-lg mb-8 leading-relaxed">
+        Specializing in high-performance web apps and Machine Learning research.
+      </p>
+
+    </div>
+  </section>
+
+  <section id="about" class="py-24 px-6 bg-card-bg/20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8">About Me</h3>
+      <p class="text-text-muted leading-relaxed text-lg">
+        Currently pursuing my B.Tech at Rajarambapu Institute of Technology.
+        I focus on bridging the gap between clean UI design and complex backend logic.
+        I am an active hackathon participant and developer of <span class="text-electric-blue">BreathCoder AI</span>.
+      </p>
+      <div class="flex justify-center pt-7 md:justify-center gap-3">
+        <div
+          class="px-5 py-2 bg-success-green/10 text-success-green border border-success-green/20 rounded-full text-xs font-bold uppercase tracking-wide">
+          CGPA: 8.87</div>
+        <div
+          class="px-5 py-2 bg-electric-blue/10 text-electric-blue border border-electric-blue/20 rounded-full text-xs font-bold uppercase tracking-wide">
+          10th: 96.40%</div>
+        <div
+          class="px-5 py-2 bg-electric-blue/10 text-electric-blue border border-electric-blue/20 rounded-full text-xs font-bold uppercase tracking-wide">
+          12th: 84%</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold mb-12 border-l-4 border-electric-blue pl-6">My Projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        class="bg-card-bg border border-border-line p-8 rounded-3xl hover:border-electric-blue/50 hover:translate-y-[-8px] transition-all duration-300 group">
+        <div
+          class="w-10 h-10 bg-electric-blue/10 rounded-lg mb-6 flex items-center justify-center text-electric-blue group-hover:bg-electric-blue group-hover:text-white transition-colors font-bold">
+          01</div>
+        <h4 class="text-xl font-bold mb-4">Smart Bus System</h4>
+        <p class="text-text-muted text-sm mb-6 leading-relaxed">Real-time occupancy tracking & reserved seat enforcement
+          for smarter cities.</p>
+        <a href="#"
+          class="text-electric-blue text-xs font-bold uppercase tracking-widest border-b border-transparent hover:border-electric-blue pb-1 transition-all">Case
+          Study &rarr;</a>
+      </div>
+      <div
+        class="bg-card-bg border border-border-line p-8 rounded-3xl hover:border-electric-blue/50 hover:translate-y-[-8px] transition-all duration-300 group">
+        <div
+          class="w-10 h-10 bg-electric-blue/10 rounded-lg mb-6 flex items-center justify-center text-electric-blue group-hover:bg-electric-blue group-hover:text-white transition-colors font-bold">
+          02</div>
+        <h4 class="text-xl font-bold mb-4">Guardian Paws</h4>
+        <p class="text-text-muted text-sm mb-6 leading-relaxed">Wildlife monitoring system leveraging technology for
+          biodiversity conservation.</p>
+        <a href="#"
+          class="text-electric-blue text-xs font-bold uppercase tracking-widest border-b border-transparent hover:border-electric-blue pb-1 transition-all">Case
+          Study &rarr;</a>
+      </div>
+      <div
+        class="bg-card-bg border border-border-line p-8 rounded-3xl hover:border-electric-blue/50 hover:translate-y-[-8px] transition-all duration-300 group">
+        <div
+          class="w-10 h-10 bg-electric-blue/10 rounded-lg mb-6 flex items-center justify-center text-electric-blue group-hover:bg-electric-blue group-hover:text-white transition-colors font-bold">
+          03</div>
+        <h4 class="text-xl font-bold mb-4">BreathCoder AI</h4>
+        <p class="text-text-muted text-sm mb-6 leading-relaxed">AI-driven diagnostic support tool developed during
+          institute level hackathons.</p>
+        <a href="#"
+          class="text-electric-blue text-xs font-bold uppercase tracking-widest border-b border-transparent hover:border-electric-blue pb-1 transition-all">Case
+          Study &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-24 px-6 max-w-6xl mx-auto text-center overflow-hidden">
+    <h3 class="text-3xl font-bold mb-12">Technical Skills</h3>
+    <div class="skills-wrapper">
+      <div class="skills-move">
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">C</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">Python</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold text-electric-blue">Java</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">DSA</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">MySQL</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">HTML</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">Tailwind
+          CSS</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">Machine
+          Learning</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">JavaScript</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">RandomForest</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">Linear
+          Regression</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">Git</span>
+
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">C</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">Python</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold text-electric-blue">Java</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">DSA</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">MySQL</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">HTML</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">Tailwind
+          CSS</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">Machine
+          Learning</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">JavaScript</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">RandomForest</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">Linear
+          Regression</span>
+        <span
+          class="px-6 py-3 bg-card-bg border border-border-line rounded-xl text-sm font-bold hover:border-light-blue-300">Git</span>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 px-6 border-t border-border-line">
+    <div class="max-w-4xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div>
+          <h3 class="text-4xl font-black mb-6">Let's <span class="text-electric-blue">Talk.</span></h3>
+          <p class="text-text-muted mb-10 leading-relaxed">Available for freelance projects and summer internship
+            opportunities starting June 2026.</p>
+          <div class="space-y-6 text-sm">
+            <div class="flex items-center gap-4">
+              <img src="icons8-gmail-48.png" alt="gmail" class="w-8 h-8">
+
+
+              <span class="font-bold tracking-widest">shreyachavan3470@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="icons8-google-maps-48.png" alt="map" class="w-8 h-8">
+              <span class="font-bold tracking-widest">shreyachavan3470@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="icons8-google-maps-48.png" alt="map" class="w-8 h-8">
+
+              <span class="font-bold tracking-widest">Sangli, Maharashtra</span>
+            </div>
+          </div>
+        </div>
+        <form id="contactForm" class="space-y-4 p-8 bg-card-bg/30 rounded-3xl border border-border-line shadow-2xl">
+          <input type="text" placeholder="Full Name" required
+            class="w-full bg-deep-blue border border-border-line px-5 py-4 rounded-2xl focus:outline-none focus:border-electric-blue text-sm transition-all">
+          <textarea placeholder="Your Message" rows="4" required
+            class="w-full bg-deep-blue border border-border-line px-5 py-4 rounded-2xl focus:outline-none focus:border-electric-blue text-sm transition-all"></textarea>
+          <button type="submit"
+            class="w-full bg-electric-blue text-white font-black py-4 rounded-2xl hover:bg-light-blue-300 transition-all uppercase tracking-widest text-xs">Send
+            Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12  text-center text-gray-700 text-[13px] bg-gray-50  tracking-[0.2em] opacity-50">
+
+
+    <div class="flex justify-center md:justify-center gap-7 mb-4">
+      <a href="https://github.com/shreya-chavan11?tab=repositories">
+        <img src="/icons8-github-64.png" alt="github"
+          class="w-10 h-10 hover:cursor-pointer hover:scale-75 transition-all duration-200" /></a>
+      <a href="https://www.linkedin.com/in/chavan-shreya-babaso-498aa4337">
+        <img src="/icons8-linkedin-48.png" alt="linkden"
+          class="w-10 h-10 hover:cursor-pointer hover:scale-75 transition-all duration-200" /></a>
+      <a href="">
+        <img src="/icons8-instagram-48.png" alt="instagram"
+          class="w-10 h-10 hover:cursor-pointer hover:scale-75 transition-all duration-200" /></a>
+
+    </div>
+
+    &copy; 2026 Shreya Chavan &bull;
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</body>
+
+</html>

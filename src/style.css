@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mulish: "Mulish", sans-serif;
+
+  --color-deep-blue: #0f172a;
+  --color-electric-blue: #3b82f6;
+  --color-light-blue-300: #60a5fa;
+  --color-card-bg: #1e293b;
+  --color-text-main: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-border-line: #334155;
+  --color-success-green: #61cea6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Skills Ticker Logic */
+.skills-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+}
+
+.skills-move {
+  display: flex;
+  width: max-content;
+  gap: 16px;
+  animation: moveSkills 25s linear infinite;
+}
+
+.skills-wrapper:hover .skills-move {
+  animation-play-state: paused;
+}
+
+@keyframes moveSkills {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Fade edges of the ticker */
+.skills-wrapper::before,
+.skills-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.skills-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #0f172a, transparent);
+}
+.skills-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #0f172a, transparent);
+}
